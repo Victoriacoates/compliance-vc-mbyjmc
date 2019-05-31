@@ -1,0 +1,116 @@
+
+  
+  <div *ngIf="hero">
+
+
+
+<div class="jumbotron mat-elevation-z18" style="border-radius: 8px">
+
+  <h2>Rule Details</h2>
+
+<div class="form-group">
+    <label>Rule Name</label>
+       <!-- <small class=" form-text text-muted">
+     Rule which will be evaluated against each asset to analyze
+</small> -->
+
+    <input class="form-control" [(ngModel)]="hero.name" placeholder="name">
+  </div>
+
+
+<div class="form-group">
+    <label>Description</label>
+
+    <input class="form-control" [(ngModel)]="hero.description" placeholder="Any additional details here"/>
+
+</div>
+
+
+
+
+
+  <div class="row">
+    <div class="col-8">
+
+<label>Rule Definition</label>
+    
+          <!-- <small class=" form-text text-muted">The rule is defined in JavaScript. The editor provides highlighting and syntax checking</small> -->
+        
+          <small class="form-text text-center">Create compliance rules from available assets on the right.<br>
+           When the conditions are satisified the document on blockchain will be compliant.<br>
+</small>
+
+ <textarea class="form-control" rows="7" >
+   
+IF facility in participatingLocations AND hasPaperCertificateUploaded is TRUE
+   IF facility not in participatingLocations
+       return true;
+
+      </textarea>
+ <small class="form-text text-center">The rule is defined in JavaScript.</small>
+    </div>
+
+
+    <div class="col-4">
+
+          <label>Asset Schema </label>
+        
+     <small class="form-text text-center">Available attributes relevant for this rule<p></small>
+
+  <textarea class="form-control"  rows="7" >
+location
+certificateType
+certificateBatchNumber
+hasPaperCertificateUploaded
+creationDate
+expiryDate
+facility
+facilityType
+facilityLocation
+verifiedBy
+verifierDetails
+verifyDate
+      </textarea>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="container">
+
+
+     
+<div class="row">
+    <div class="col-3">
+      
+ <button class="btn btn-secondary" (click)="goBack()">Return to all rules</button> 
+
+    </div>
+    <div class="col-2">
+      <button class="btn btn-primary"  (click)="save()">Save</button>
+
+    </div>
+    <!-- <div class="col">col</div> -->
+    <div class="col-2">
+
+
+  <button class="btn btn-secondary delete" title="delete hero" 
+      (click)="delete(this.hero)">Delete</button>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

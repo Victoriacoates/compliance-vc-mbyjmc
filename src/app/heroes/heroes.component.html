@@ -1,0 +1,91 @@
+
+<div class="card bg-light border"  style="border-radius: 4px">
+  <div class="card-header">
+    
+
+      <h3>
+ Blockchain Solution: <span class="text-muted">Food Tracking Channel</span></h3>
+
+
+  </div>
+  <div class="card-body bg-white">
+
+
+<div>
+  <app-hero-search></app-hero-search>
+</div>
+
+<mat-divider></mat-divider>
+
+
+
+
+<!-- **original version of Rules List** 
+ <ul class="heroes" >
+  <li *ngFor="let hero of heroes" >
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    
+    
+  </li>
+</ul>  -->
+
+
+
+
+<ul class="heroes">
+  
+<mat-nav-list>
+  <mat-list-item *ngFor="let hero of heroes">
+    
+     <a routerLink="/detail/{{hero.id}}" >
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+
+  </mat-list-item>
+</mat-nav-list>
+
+</ul>
+
+
+
+
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Create new rule </mat-label>
+    <input matInput #heroName placeholder="Rule name">
+  
+  </mat-form-field>
+    
+
+    <button class="btn btn-primary"  (click)="add(heroName.value); heroName.value=''">
+    Add
+  </button>
+
+
+  </div>
+</div>
+
+
+<!-- <div>
+  <label>  </label>
+    <input #heroName placeholder="New rule">
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <!-- <button class="btn btn-primary"  (click)="add(heroName.value); heroName.value=''">
+    Add
+  </button>
+</div> --> -
+
+
+
+
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

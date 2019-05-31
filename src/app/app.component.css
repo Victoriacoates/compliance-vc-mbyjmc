@@ -1,0 +1,118 @@
+Mat-toolbar {
+
+background-color: #325c80;
+color: white;
+  font-family: Helvetica Neue;
+}
+
+
+/* {
+    display: inline-block !important;
+    width: 100%;
+} */
+.mat-tab-link-active,
+.mat-tab-label-active {
+    background-color:rgba(38, 137, 187, 0.247);
+    border: 0px solid #6B7F7F;
+    font-weight: bold;
+
+  
+        font-family: georgia;
+        /* doesnt work */
+}
+.mat-tab-link,
+.mat-tab-label {
+    line-height: 45px !important;
+    height: 40px !important;
+    min-width: 100px !important;
+    border: 0px solid #7e7e7e;
+}
+.tabContentContainer {
+    border: 0px solid #aaaaaa;
+    background: #ffffff 50% 50% repeat-x;
+}
+
+
+
+
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+
+/* AppComponent's private CSS styles */
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  /* margin-top: 10px; */
+  display: inline-block;
+  background-color: ;
+  /* border-radius: 4px; */
+
+
+Font-family: Helvetica Neue ;
+font-size: 18px;
+
+  color: rgb(82, 80, 80);
+}
+
+nav a:visited, a:link {
+  color: rgb(2, 16, 22);
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #e53003;
+}
+
+
+
+
+
+
+html { height: 100%; }
+
+/* body {
+  min-height: 100%;
+  position: relative;
+  font-family: Helvetica Neue;
+} */
+
+/* .main {
+   min-height: 100%;
+   padding-bottom: 60px;
+    font-family: helvetica neue;
+} */
+
+.footer {
+  background-color: #f5f5f5;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;  
+  width: 100%;
+}
+
+.row { margin: 20px 100px; }
+code { color: darkred!important; }
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

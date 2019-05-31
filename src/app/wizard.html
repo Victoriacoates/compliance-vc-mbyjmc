@@ -1,0 +1,138 @@
+
+<div class="row">
+<div class="jumbotron mat-elevation-z22">
+  
+<!-- <div class="container"> -->
+<mat-horizontal-stepper [linear]="isLinear" #stepper class="mat-elevation-z2">
+  <mat-step [stepControl]="firstFormGroup">
+
+
+    <form [formGroup]="firstFormGroup">
+<!--    
+   <ng-template matStepperIcon>
+    <mat-icon>insert_drive_file</mat-icon>
+  </ng-template> -->
+
+<div class="row">
+
+<h3> Select rules to include for analysis</h3><BR>
+
+
+</div>
+
+
+<rules-analysis></rules-analysis>
+
+
+
+<!-- </div> -->
+
+
+      <div class="row">
+       
+
+          
+        <button type="button" class="btn btn-primary btn-lg" matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  
+  <mat-step [stepControl]="secondFormGroup">
+    
+   <!-- <ng-template matStepperIcon>
+    <mat-icon>insert_drive_file</mat-icon>
+  </ng-template> -->
+    
+  
+
+    <fieldset class="form-group">
+
+  <div class="row">
+      <div class="example-container">
+
+
+        <h3>Asset Selection</h3><BR>
+
+  
+
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+          Analyze current state (world state)
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+          Analyze whole ledger
+        </label>
+      </div>
+</div></div>
+    <br><br>
+
+    </fieldset>
+
+    
+    
+    
+    <form [formGroup]="secondFormGroup">
+     
+
+
+      
+       <div class="row">
+
+    <div class="col-2">
+
+    
+
+    <button type="button" class="btn btn-outline-secondary btn-lg" matStepperPrevious>Back</button>
+
+        </div>
+
+    <div class="col-3">
+
+
+          <button type="button" class="btn btn-primary btn-lg" matStepperNext>Start Analysis</button>
+      
+      </div>
+ </div>
+
+
+    </form>
+
+  </mat-step>
+
+
+  <mat-step>
+     <ng-template matStepLabel>
+
+    </ng-template>
+    
+
+    <div class="row">
+      <div class="example-container">
+
+
+    <h3>Analysis Progress</h3><BR>
+
+   <div class="row">
+<mat-spinner></mat-spinner>
+   </div>
+<br><br>
+
+ </div></div>
+
+<div class="row">
+  <a routerLink="/summary" class="btn btn-primary btn-lg">View Results</a>
+</div>
+      
+   
+  </mat-step>
+</mat-horizontal-stepper>
+
+</div></div>
+<!-- Copyright 2019 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

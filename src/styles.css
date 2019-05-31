@@ -1,0 +1,88 @@
+
+button {
+  /* background-color: #eee;
+  border: none; */
+  /* padding: 5px 10px; */
+  border-radius: 4px; 
+
+  font-family: georgia;
+}
+
+
+
+body {
+  min-height: 100%;
+  position: relative;
+   margin: 20em;
+
+      font-family: georgia;
+}
+
+/* body {
+  margin: 20em;
+} */
+
+
+.main {
+   min-height: 100%;
+   padding-bottom: 55px;
+
+     font-family: georgia;
+}
+
+.container {
+    font-family: Helvetica Neue ;
+    /* important */
+}
+
+
+
+/* .app-footer {
+  font-size: 20px;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#footer {
+  color: red;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #636363;
+}
+
+#footer > .container {
+  margin: 0 auto;
+} */
+
+
+
+
+/* .row {
+ font-weight: bold;
+    display:flex;
+  justify-content:center;
+}
+ */
+
+
+body, input[text], button {
+  color: #888;
+  font-family: georgia;
+}
+/* doesnt work */
+
+
+
+
+example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+}
